@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    }
+    input[type=text], input[type=tel],input[type=email],select {
+    margin-right:500px;
+    width: 60%;
+    margin-left:20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    }
+  p{
+        color: rgb(58, 139, 11);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    input:hover{
+        background-color:palegreen;
+    }
+    input[type=submit]:hover {
+    background-color: #17cce4;
+    }
+    </style>
+    </head>
+    <body background="https://cdn.pixabay.com/photo/2021/05/27/20/53/field-6289253__340.jpg">
+<br>
+    
+    <div class="card card-body container w-50 " style="text-align:center; background-color:silver;">
+        <form method="post" action="/croprecommend" enctype="multipart/form-data" >
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-2 text-center card-header" style="background-color: rgb(120, 35, 190);color: rgb(247, 243, 243);">LOGIN</legend>
+            </fieldset>
+
+    <input  type="text" name="name" placeholder="eg:sreeja" required="required"  /><br>
+    <input  type="tel" name="telephone" placeholder="eg:+919381755231" required="required"  /><br>
+     <input  type="email" name="email" placeholder="eg:sreejachinthamreddy@gmail.com" required="required" /> <br>
+        <div class="form-group">
+            <button class="btn btn-success"  type="submit">
+                Proceed
+            </button>
+        </div>
+    </form>
+    </div>
+
+    <br>
+    </body>
+
+</html>
